@@ -35,7 +35,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--light-red);
+  background-color: var(--white);
 }
 
 .card {
@@ -94,6 +94,7 @@ main {
   background-color: var(--white);
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 5px 5px 10px var(--lightLavender);
 }
 .right-container > p {
   font-size: 1.2em;

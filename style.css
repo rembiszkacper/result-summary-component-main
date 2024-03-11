@@ -1,0 +1,178 @@
+:root {
+  /* Primary */
+
+  --light-red: hsl(0, 100%, 67%);
+  --orangeyYellow: hsl(39, 100%, 56%);
+  --greenTeal: hsl(166, 100%, 37%);
+  --cobaltBlue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  /* Background */
+  --lightSlateBlue: hsl(252, 100%, 67%);
+  --lightRoyalBlue: hsl(241, 81%, 54%);
+
+  /* Circle */
+  --violetBlue: hsla(256, 72%, 46%, 1);
+  --persianBlue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --paleBlue: hsl(221, 100%, 96%);
+  --lightLavender: hsl(241, 100%, 89%);
+  --darkGrayBlue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-size: 18px;
+  font-family: "Hanken Grotesk", "sans-serif";
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-red);
+}
+
+.card {
+  display: flex;
+  max-width: 600px;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+.left-container {
+  background-image: linear-gradient(
+    var(--lightSlateBlue),
+    var(--lightRoyalBlue)
+  );
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.left-container > p {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: var(--lightLavender);
+  padding: 30px 0;
+}
+.left-container > .result-circle {
+  background-image: linear-gradient(var(--violetBlue), var(--persianBlue));
+  border-radius: 100%;
+  padding: 30px 40px;
+}
+.left-container > .result-circle > h1 {
+  font-size: 3em;
+  font-weight: 800;
+  color: var(--white);
+}
+.left-container > .result-circle > p {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--lightLavender);
+}
+
+.left-container > h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+  padding: 20px 0;
+  color: var(--white);
+}
+.left-container > .result-description {
+  font-size: 0.9em;
+  padding: 0 30%;
+}
+
+.right-container {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+}
+.right-container > p {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: var(--darkGrayBlue);
+}
+.reaction-container,
+.memory-container,
+.verbal-container,
+.visual-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+.reaction-container-left-side,
+.reaction-container-right-side,
+.memory-container-left-side,
+.memory-container-right-side,
+.verbal-container-left-side,
+.verbal-container-right-side,
+.visual-container-left-side,
+.visual-container-right-side {
+  display: flex;
+  justify-content: space-between;
+}
+.summary-text {
+  color: var(--darkGrayBlue);
+  font-weight: 800;
+  margin: 0 10px 0 30px;
+}
+.reaction-container {
+  background-color: hsla(0, 100%, 67%, 10%);
+}
+.memory-container {
+  background-color: hsla(39, 100%, 56%, 10%);
+}
+.verbal-container {
+  background-color: hsla(166, 100%, 37%, 10%);
+}
+.visual-container {
+  background-color: hsla(234, 85%, 45%, 10%);
+}
+.reaction-container > .reaction-container-left-side > p {
+  color: var(--light-red);
+  font-weight: 700;
+  margin: 0 10px;
+}
+.memory-container > .memory-container-left-side > p {
+  color: var(--orangeyYellow);
+  font-weight: 700;
+  margin: 0 10px;
+}
+.verbal-container > .verbal-container-left-side > p {
+  color: var(--greenTeal);
+  font-weight: 700;
+  margin: 0 10px;
+}
+.visual-container > .visual-container-left-side > p {
+  color: var(--cobaltBlue);
+  font-weight: 700;
+  margin: 0 10px;
+}
+.right-container > .button {
+  background-color: var(--darkGrayBlue);
+  color: var(--white);
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.right-container > .button:hover {
+  background-image: linear-gradient(var(--violetBlue), var(--persianBlue));
+  font-weight: 800;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    flex-direction: column;
+  }
+}
